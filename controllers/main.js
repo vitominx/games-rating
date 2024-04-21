@@ -1,6 +1,6 @@
-const staticFile = require("../http-utils/static-file");
-const { getData, endpoints } = require("../api");
-const { config, makeRatingFile } = require("../rating");
+const staticFile = require("../appModules/http-utils/static-file");
+const { getData, endpoints } = require("../appModules/api");
+const { config, makeRatingFile } = require("../appModules/rating");
 
 async function mainRouteController(res, publicUrl, extname) {
   const data = await getData(endpoints.games);

@@ -1,5 +1,4 @@
 const http = require("http");
-const path = require("path");
 
 const PORT = 3005;
 
@@ -8,7 +7,7 @@ const {
   defaultRouteController,
   gameRouteController,
   voteRouteController,
-} = require("./appModules/controllers");
+} = require("./controllers");
 
 const server = http.createServer((req, res) => {
   const url = req.url;

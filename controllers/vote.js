@@ -1,6 +1,6 @@
-const parseBody = require("../http-utils/parse-body");
+const parseBody = require("../appModules/http-utils/parse-body");
 const fs = require("fs").promises;
-const { config, createRating, updateRating } = require("../rating");
+const { config, createRating, updateRating } = require("../appModules/rating");
 
 async function voteRouteController(req, res) {
   if (req.method !== "POST") {
